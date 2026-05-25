@@ -1,0 +1,118 @@
+# ── Data (never commit raw or processed biological data) ──────────────────────
+data/raw/
+data/processed/
+data/graphs/
+*.csv
+*.tsv
+*.xlsx
+*.h5
+*.hdf5
+*.parquet
+
+# ── Model checkpoints (large binary files) ────────────────────────────────────
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+
+# ── Outputs (generated figures and results) ───────────────────────────────────
+outputs/
+*.png
+*.pdf
+*.svg
+
+# ── Weights & Biases ──────────────────────────────────────────────────────────
+wandb/
+.wandb/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+pip-wheel-metadata/
+.installed.cfg
+MANIFEST
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+env/
+ENV/
+.venv/
+.env/
+.conda/
+
+# ── Environment variables (API keys, secrets) ─────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.secret
+
+# ── Jupyter Notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# ── IDEs and editors ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ── Linux ─────────────────────────────────────────────────────────────────────
+*~
+.fuse_hidden*
+.Trash-*
+
+# ── Windows ───────────────────────────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+*.out
+*.err
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Coverage and testing ──────────────────────────────────────────────────────
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+
+# ── Temporary files ───────────────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
