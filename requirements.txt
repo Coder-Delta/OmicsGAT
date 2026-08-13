@@ -11,4 +11,4 @@ matplotlib>=3.7
 seaborn>=0.12
 xgboost>=2.0
 pyyaml>=6.0
-wandb
+# Optional experiment tracking; not required by this codebase.

@@ -1,6 +1,32 @@
-learning_rate: 0.001
-batch_size: 32
-epochs: 100
-hidden_dim: 64
-heads: 8
-dropout: 0.2
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  graph_dir: data/graphs
+  expression_file: data/processed/tcga_expression.csv
+  # Must be created from an explicit TCGA clinical/subtype source; columns: sample_id,label
+  labels_file: data/processed/tcga_labels.csv
+
+training:
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  hidden_dim: 64
+  dropout: 0.2
+  batch_size: 16
+  seed: 42
+
+model:
+  type: gat
+  input_dim: 1
+  hidden_dim: 64
+  output_dim: null  # inferred from labels at training time
+  heads: 4
+
+evaluation:
+  test_size: 0.2
+  random_state: 42
+
+paths:
+  checkpoint_dir: checkpoints
+  results_dir: outputs/results
+  figures_dir: outputs/figures
